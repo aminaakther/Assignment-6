@@ -6,13 +6,6 @@ const GetStared = () => {
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Get Started In 3 Steps</h2>
         <p className="mt-4 text-lg text-gray-500">Start using premium digital tools in minutes, not hours.</p>
-
-
-
-      <p className='bg-amber-400 text-white'>hello</p>
-
-
-
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
           
           {/* Step 1 */}
