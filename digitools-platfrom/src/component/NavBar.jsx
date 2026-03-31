@@ -21,35 +21,12 @@ const NavBar = () => {
           <li className="cursor-pointer hover:text-purple-600 transition">FAQ</li>
         </ul>
       </div>
-
-
-
-
-      
-
-
-
       <div className="navbar-end flex items-center gap-6">
-       
+
         <div className="flex items-center gap-2 cursor-pointer text-gray-700 hover:text-purple-600 font-medium transition-colors group">
-
-         
           <i className="fa-solid fa-cart-shopping text-lg group-hover:scale-110 transition-transform"></i>
-
           <span>Login</span>
-        </div> 
-
-
-
-
-
-
-
-
-
-
-
-
+        </div>
         <button className="bg-gradient-to-r from-[#8b2cf5] to-[#a434ff] text-white font-semibold py-[10px] px-[24px] rounded-full hover:opacity-90 transition-opacity shadow-lg active:scale-95">
           Get Started
         </button>
