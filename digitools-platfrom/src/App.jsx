@@ -2,7 +2,7 @@
 
 
 
-
+import Models from './component/Models'
 
 import Active from './component/Active'
 import Banner from './component/Banner'
@@ -17,7 +17,12 @@ import Section from './component/Section'
 import Simple from './component/Simple'
 import Cart from './component/Cart'
 
+const getModels = async () => {
+  const res = await fetch("/models.json")
+  return res.json()
+}
 
+const modelPromise = getModels()
 
 function App() {
  
@@ -26,7 +31,9 @@ function App() {
     <>
     <NavBar />
     <Banner />
+
     <Active />
+    <Models modelPromise={modelPromise} />
     <Cart />
     <GetStared />
     <Simple />

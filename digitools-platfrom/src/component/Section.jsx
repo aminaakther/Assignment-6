@@ -16,10 +16,6 @@ const Section = () => {
           Start your free trial today.
         </p>
 
-
-        
-        <p>hello</p>
-
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <button className="bg-white text-[#7c3aed] px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-all shadow-lg active:scale-95">
