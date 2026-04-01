@@ -4,12 +4,6 @@ const Footer = () => {
     return (
       <footer className="bg-[#0B0E14] text-gray-400 py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        
-       
-    
-
-
-
 <div className="bg-[#0B0E14] text-white p-12">
       {/* Main Container: shob section pashapashi rakhar jonno flex use kora hoyeche */}
       <div className="flex flex-row justify-between items-start gap-8 max-w-7xl mx-auto">
@@ -75,10 +69,6 @@ const Footer = () => {
 
       </div>
     </div>
-
-
-
-
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
           <p>© 2026 Digitools. All rights reserved.</p>
@@ -86,6 +76,9 @@ const Footer = () => {
             <a href="#" className="hover:text-white">Privacy Policy</a>
             <a href="#" className="hover:text-white">Terms of Service</a>
             <a href="#" className="hover:text-white">Cookies</a>
+
+
+            <h1>hello</h1>
           </div>
         </div>
       </div>
