@@ -71,12 +71,34 @@ const Banner = () => {
                         </button>
 
                         {/* Secondary Button */}
-                        <button className="flex items-center gap-2 border border-purple-200 text-[#8b2cf5] px-8 py-4 rounded-full font-semibold hover:bg-purple-50 transition-all">
+                        {/* <button className="flex items-center gap-2 border border-purple-200 text-[#8b2cf5] px-8 py-4 rounded-full font-semibold hover:bg-purple-50 transition-all">
                             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                             </svg>
                             Watch Demo
-                        </button>
+                        </button> */}
+
+
+
+
+                         <button className="flex items-center gap-2 border border-purple-200 text-[#8b2cf5] px-8 py-4 rounded-full font-semibold hover:bg-purple-50 transition-all">
+                            <span className="text-lg">▶ </span>
+                            Watch Demo
+                        </button>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
 

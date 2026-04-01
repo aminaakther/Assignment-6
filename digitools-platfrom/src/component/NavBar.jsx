@@ -1,35 +1,64 @@
-import React from 'react';
-
-const NavBar = () => {
+import React from "react";
+const NavBar = ({ carts }) => {
   return (
-    <div className="navbar bg-white px-4 md:px-10 border-b border-gray-100 flex items-center justify-between py-4">
+    <div className="navbar px-4">
 
-      {/* Navbar Start: Logo */}
-      <div className="navbar-start flex items-center">
-        <div className="text-2xl font-bold text-[#9333ea] cursor-pointer">
-          DigiTools
+
+      <div className="navbar-start">
+
+
+        <div className="dropdown">
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>Products</a></li>
+            <li><a>Features</a></li>
+            <li><a>Pricing</a></li>
+            <li><a>Testimonials</a></li>
+            <li><a>FAQ</a></li>
+          </ul>
         </div>
+
+
+        <h1 className="text-2xl md:text-3xl font-bold text-[#9333ea] cursor-pointer">
+          DigiTools
+        </h1>
+
       </div>
 
-      {/* Navbar Center: Horizontal Menu */}
-      <div className="navbar-center hidden lg:flex flex-1 justify-center">
-        <ul className="flex items-center gap-8 text-[16px] font-medium text-gray-600 list-none">
-          <li className="cursor-pointer hover:text-purple-600 transition">Products</li>
-          <li className="cursor-pointer hover:text-purple-600 transition">Features</li>
-          <li className="cursor-pointer hover:text-purple-600 transition">Pricing</li>
-          <li className="cursor-pointer hover:text-purple-600 transition">Testimonials</li>
-          <li className="cursor-pointer hover:text-purple-600 transition">FAQ</li>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal gap-8 px-1 text-lg">
+          <li><a>Products</a></li>
+          <li><a>Features</a></li>
+          <li><a>Pricing</a></li>
+          <li><a>Testimonials</a></li>
+          <li><a>FAQ</a></li>
         </ul>
       </div>
-      <div className="navbar-end flex items-center gap-6">
 
-        <div className="flex items-center gap-2 cursor-pointer text-gray-700 hover:text-purple-600 font-medium transition-colors group">
-          <i className="fa-solid fa-cart-shopping text-lg group-hover:scale-110 transition-transform"></i>
-          <span>Login</span>
+      <div className="navbar-end gap-3 md:gap-5">
+
+
+        <div className="relative">
+          <button className="text-xl">
+            🛒
+          </button>
+
+          {carts.length > 0 && (
+            <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs px-2 py-[2px] rounded-full">
+              {carts.length}
+            </span>
+          )}
         </div>
-        <button className="bg-gradient-to-r from-[#8b2cf5] to-[#a434ff] text-white font-semibold py-[10px] px-[24px] rounded-full hover:opacity-90 transition-opacity shadow-lg active:scale-95">
-          Get Started
-        </button>
+
+        <p className="hidden sm:block cursor-pointer">Login</p>
+
+
+        <a className="btn bg-gradient-to-r from-[#8b2cf5] to-[#a434ff] rounded-full text-white text-sm md:text-base px-4 md:px-6">
+          Get in Touch
+        </a>
+
       </div>
 
     </div>
